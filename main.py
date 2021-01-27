@@ -18,7 +18,7 @@ def make_RNA(string):
 def find_start_codon(rna_string):
     startcodon = []
     for i in range(rna_string.count("AUG")):
-        startcodon.append(startcodon_index=rna_string.rfind("AUG"))
+        startcodon.append(rna_string.rfind("AUG"))
 
     return startcodon
 
