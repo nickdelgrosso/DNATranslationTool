@@ -19,13 +19,13 @@ def make_RNA(string):
     return complement_strand.replace('T', 'U')
 
 cases = [
-    ("ATG", "TAC"),
-    ("GGCCTA","CCGGAT")
+    ("ATG", "CAT"),
+    ("GGCCTA","TAGGCC")
     ]
 
 cases2 = [
-    ("ATG", "UAC"),
-    ("GGCCTA","CCGGAU")
+    ("ATG", "CAU"),
+    ("GGCCTA","UAGGCC")
     ]
 
 
