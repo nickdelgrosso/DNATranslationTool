@@ -23,6 +23,14 @@ def make_RNA(string):
     complement_strand = make_complement(string)
     return complement_strand.replace('T', 'U')
 
+def find_start_codon(rna_string):
+    startcodon = []
+    for i in range(rna_string.count("AUG")):
+        startcodon.append(startcodon_index = rna_string.rfind("AUG"))
+
+    return startcodon
+
+
 def get_codon_from_RNA(RNA_string):
     codon_list = []
     for i in range(0,len(RNA_string),3):
