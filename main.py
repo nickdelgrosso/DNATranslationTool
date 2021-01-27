@@ -1,11 +1,16 @@
 ## This python file will take a string of DNA letters and do something with it
 import pytest
+import json
 
 # create lookup DNA dict
 DNA_dict = {"A":"T",
             "T":"A",
             "G":"C",
             "C":"G"}
+
+# import codons dict
+with open('data/codons.json') as json_file:
+    codons_dict = json.loads(json_file)
 
 def make_complement(string):
     complement_strand = ""
