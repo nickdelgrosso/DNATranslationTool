@@ -25,7 +25,8 @@ def make_RNA(string):
 
 def get_codon_from_RNA(RNA_string):
     codon_list = []
-    for i in range(2):
+    for i in range(0,len(RNA_string),3):
+        RNA_string[i:i+2]
 
 cases_DNA_complement = [
     ("ATG", "CAT"),
