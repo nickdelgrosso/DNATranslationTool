@@ -11,7 +11,7 @@ DNA_dict = {"A":"T",
 def make_complement(string):
     complement_strand = ""
     for element in string:
-        complement_strand.join(DNA_dict[element])
+        complement_strand += DNA_dict[element]
 
     return(complement_strand)
 
@@ -21,6 +21,6 @@ cases = [
     ("GGCCTA","CCGGAT")
     ]
 
-@pytest.mark.parametrize("string, complement", cases)
+@pytest.mark.parametrize(["string", "complement"], cases)
 def test_make_complement(string,complement):
     assert make_complement(string)==complement
