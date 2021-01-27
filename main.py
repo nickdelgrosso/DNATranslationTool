@@ -10,7 +10,7 @@ DNA_dict = {"A":"T",
 
 # import codons dict
 with open('data/codons.json') as json_file:
-    codons_dict = json.loads(json_file)
+    codons_dict = json.load(json_file)
 
 def make_complement(string):
     complement_strand = ""
@@ -22,6 +22,10 @@ def make_complement(string):
 def make_RNA(string):
     complement_strand = make_complement(string)
     return complement_strand.replace('T', 'U')
+
+def get_codon_from_RNA(RNA_string):
+    codon_list = []
+    for i in range(2):
 
 cases = [
     ("ATG", "CAT"),
