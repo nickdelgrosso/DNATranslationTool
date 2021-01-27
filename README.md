@@ -9,5 +9,7 @@ Native Python tools for translating DNA sequences to resulting proteins.
     - Gets codons from RNA strand
     - Creates list of corresponding amino acids with 3-letter codes
     
+## Installation and Package Setup
 
+Clone the Repository to your local computer.
 

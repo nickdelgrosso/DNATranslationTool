@@ -21,9 +21,11 @@ def test_make_RNA(string,complement):
 
 
 cases = [
-    ("AUG", "Met")
+    ("AUG", ["Met"]),
     ("AUGGAA", ["Met", "Glu"])
     ]
 @pytest.mark.parametrize(["string", "complement"], cases)
 def test_get_codon(string,complement):
     assert get_codon_from_RNA(string)== complement
+
+
