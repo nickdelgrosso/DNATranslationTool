@@ -27,21 +27,28 @@ def get_codon_from_RNA(RNA_string):
     codon_list = []
     for i in range(2):
 
-cases = [
+cases_DNA_complement = [
     ("ATG", "CAT"),
     ("GGCCTA","TAGGCC")
     ]
 
-cases2 = [
+cases_DNAtoRNA = [
     ("ATG", "CAU"),
     ("GGCCTA","UAGGCC")
     ]
+cases_codon_from_RNA = [
+    ("AUG", "Met")
+    ("AUGGAA", ["Met", "Glu"])
+    ]
 
-
-@pytest.mark.parametrize(["string", "complement"], cases)
+@pytest.mark.parametrize(["string", "complement"], cases_DNA_complement)
 def test_make_complement(string,complement):
     assert make_complement(string)==complement
 
-@pytest.mark.parametrize(["string", "complement"], cases2)
+@pytest.mark.parametrize(["string", "complement"], cases_DNAtoRNA)
 def test_make_RNA(string,complement):
     assert make_RNA(string)==complement
+
+@pytest.mark.parametrize(["string", "complement"], cases_codon_from_RNA)
+def test_get_codon(string,complement):
+    assert get_codon_from_RNA(string)== complement
