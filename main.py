@@ -7,7 +7,6 @@ DNA_dict = {"A":"T",
             "G":"C",
             "C":"G"}
 
-
 def make_complement(string):
     complement_strand = ""
     for element in string:
@@ -15,6 +14,9 @@ def make_complement(string):
 
     return(complement_strand)
 
+def make_RNA(string):
+    complement_strand = make_complement(string)
+    return complement_strand.replace('T', 'U')
 
 cases = [
     ("ATG", "TAC"),
@@ -24,3 +26,4 @@ cases = [
 @pytest.mark.parametrize(["string", "complement"], cases)
 def test_make_complement(string,complement):
     assert make_complement(string)==complement
+
