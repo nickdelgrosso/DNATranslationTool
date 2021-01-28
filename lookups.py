@@ -9,3 +9,6 @@ DNA_dict = {"A": "T",
 # import codons dict
 with open('data/codons.json') as json_file:
     codons_dict = json.load(json_file)
+
+with open('data/peptides.json') as json_file:
+    peptides_dict = json.load(json_file)

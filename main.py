@@ -1,6 +1,6 @@
 ## This python file will take a string of DNA letters and do something with it
 try:
-    from lookups import *
+    from lookups import DNA_dict, codons_dict
     print("Hello, have fun!")
 except ImportError:
     print("oops, something went wrong, try again")
@@ -35,3 +35,9 @@ def get_codon_from_RNA(RNA_string):
     for codon in codon_list:
         amino_acid_list.append(codons_dict[codon])
     return amino_acid_list
+
+
+def read_DNAfile(path):
+    DNA_file = open(path,'r')
+    DNA_file.read()
+    return DNA_file
