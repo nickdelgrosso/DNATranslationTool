@@ -31,3 +31,8 @@ def get_codon_from_RNA(RNA_string):
     for codon in codon_list:
         amino_acid_list.append(codons_dict[codon])
     return amino_acid_list
+
+def read_DNAfile(path):
+    DNA_file = open(path,'r')
+    DNA_file.read()
+    return DNA_file
