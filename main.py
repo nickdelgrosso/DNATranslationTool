@@ -34,5 +34,8 @@ def get_codon_from_RNA(RNA_string):
 
 def read_DNAfile(path):
     DNA_file = open(path,'r')
-    DNA_file.read()
-    return DNA_file
+    DNA_string = DNA_file.read()
+    return DNA_string
+
+
+print(read_DNAfile("DNA_test.txt"))
