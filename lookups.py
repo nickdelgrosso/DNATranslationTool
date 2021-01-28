@@ -1,5 +1,7 @@
 import json
 
+RNA_bases = ["A", "C", "G", "U"]
+
 # create lookup DNA dict
 DNA_dict = {"A": "T",
             "T": "A",
