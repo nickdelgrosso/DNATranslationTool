@@ -1,5 +1,9 @@
 ## This python file will take a string of DNA letters and do something with it
-from lookups import *
+try:
+    from lookups import *
+    print("Hello, have fun!")
+except ImportError:
+    print("oops, something went wrong, try again")
 
 
 def make_complement(string):
