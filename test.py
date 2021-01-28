@@ -1,6 +1,12 @@
 import pytest
 from main import *
 
+cases = [('DNA_test.txt','ATGAGCTGATCGATGCTAGCTGATGCTAGCT')]
+@pytest.mark.parametrize(["path","sequence"], cases)
+def test_read_DNAfile(path,sequence):
+    assert read_DNAfile(path) == sequence
+
+
 
 cases = [
     ("ATG", "CAT"),
