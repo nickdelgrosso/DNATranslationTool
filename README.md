@@ -13,3 +13,8 @@ Native Python tools for translating DNA sequences to resulting proteins.
 
 Clone the Repository to your local computer.
 
+## Example Workflow
+- Provide DNA input
+
+`insert code here`
+
