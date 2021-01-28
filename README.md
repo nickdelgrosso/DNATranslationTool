@@ -20,5 +20,7 @@ Clone the Repository to your local computer.
 ## Example Workflow
 - Provide DNA input
 
-`insert code here`
+`DNA_input = read_DNAfile("DNA_test.txt")`
 
+- make reverse complement DNA
+`rc_DNA = make_complement(DNA_input)`
