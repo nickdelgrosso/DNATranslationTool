@@ -1,5 +1,5 @@
 ## This python file will take a string of DNA letters and do something with it
-from lookups import *
+from lookups import DNA_dict, codons_dict
 
 
 def make_complement(string):
