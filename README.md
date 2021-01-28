@@ -2,6 +2,7 @@
 Native Python tools for translating DNA sequences to resulting proteins.
 
 *Overview of the process*
+
 ![Overview](Overview_image.png)
 
 ## Full description of functions:
