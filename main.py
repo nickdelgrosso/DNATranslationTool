@@ -37,5 +37,11 @@ def read_DNAfile(path):
     DNA_string = DNA_file.read()
     return DNA_string
 
+def write_protein_file(path,protein):
+    f = open(path+"txt","a")
+    f.write(protein)
+    f.close()
 
-print(read_DNAfile("DNA_test.txt"))
+
+write_protein_file("test_file","MAPOHCAT")
+
