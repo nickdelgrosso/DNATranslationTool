@@ -43,5 +43,5 @@ def write_protein_file(path,protein):
     f.close()
 
 
-write_protein_file("test_file","MAPOHCAT")
+
 

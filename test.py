@@ -1,11 +1,10 @@
 import pytest
-from main import *
+from main import read_DNAfile, make_complement, make_RNA, get_codon_from_RNA
 
 cases = [('DNA_test.txt','ATGAGCTGATCGATGCTAGCTGATGCTAGCT')]
 @pytest.mark.parametrize(["path","sequence"], cases)
 def test_read_DNAfile(path,sequence):
     assert read_DNAfile(path) == sequence
-
 
 
 cases = [
