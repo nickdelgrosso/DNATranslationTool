@@ -7,12 +7,14 @@ except ImportError:
 
 
 def make_complement(string):
-    '''
+    """
     Makes reversed complementary DNA string
 
     :param string: Input string of DNA bases
     :return: antisense DNA string
-    '''
+    :param string:
+    :return:
+    """
 
 
     complement_strand = ""
